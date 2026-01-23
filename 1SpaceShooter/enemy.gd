@@ -3,7 +3,6 @@ class_name Enemy
 @export var speed = 100
 signal enemy_died
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	position.y += speed * delta

@@ -17,7 +17,6 @@ func _physics_process(delta: float) -> void:
 	position.x += movement # 4. Update player position
 	# 5. Clamp the player position
 	position.x = clampf(position.x, vpr.position.x + 15, vpr.end.x - 15)
-	
 
 func shoot() -> void:
 	# Create a new bullet instance

@@ -12,7 +12,6 @@ var _score: int = 0
 func _ready() -> void:
 	pass # Replace with function body.
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
@@ -40,7 +39,6 @@ func _on_timer_timeout() -> void:
 func _on_enemy_died() -> void:
 	_score += 1 # Increase the score by 1
 	label.text = str(_score) # Update the score text on the UI
-
 
 func _on_player_player_died() -> void:
 	game_over_label.show() # Show game over label
